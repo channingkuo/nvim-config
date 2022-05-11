@@ -32,9 +32,10 @@ keymap("n", "<C-W>m", ":WinShift<cr>", opts)
 
 -- FileExpoler
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-keymap("n", "<leader>f", ":NvimTreeFindFile<cr>", opts)
--- no highlight
-keymap("n", "<leader>l", ":nohl<cr>", opts)
+-- 文件定位到目录树，已设置文件自动定位
+-- keymap("n", "<leader>f", ":NvimTreeFindFile<cr>", opts)
+-- 关闭语法高亮no highlight
+-- keymap("n", "<leader>l", ":nohl<cr>", opts)
 -- save buffer
 keymap("n", "<leader>w", ":w<cr>", opts)
 -- exit cur window

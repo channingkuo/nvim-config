@@ -5,8 +5,6 @@ end
 
 local dashboard = require("alpha.themes.dashboard")
 dashboard.section.header.val = {
-	  [[ii;;;;;;::::::::,,,,,,,,,,,,,,,,,,,,,,,,:,::,:C080000000000000000088800000000000008LfffffLLLLLGGGGGG]],
-    [[;;;;;::::::::,,,,,,,,,,,,,,,,,,,,....,,,,,,,,10C000000000000000000008888000000000008LffffffLLLLLLGGG]],
     [[;;;;::::::::,,,,,,,,,,,,..............,,,,,::L0C000000000000000000000888GGLGGC800800CLffffffLLLLLLGG]],
     [[;;;::::::,,,,,,,,,,,,.................,,,.:,i08000000000000000000008CLf11111tLC800800GffffffffLLLLLG]],
     [[::::::,,,,,,,,,,,,,..................,,,,,,,i0C000000000000088088CL1iii;;;;itfLC808008ffffffffffLLLL]],
@@ -33,12 +31,7 @@ dashboard.section.header.val = {
     [[tttt11111111iiiiiiiiiiiiiii;;;;:;111111iii;;;;;188Gt1111111i;i;;;;;;;;;;;;;i;;itti;;;;;ittttffffffLL]],
     [[fttttt11111111111iiiiiiiiii;;;;:;1t111iiiii;;;;ii1iii11i1iiii;;;;;;;;;;;;;;;;1tt;;;;;;;ittttfffffLLL]],
     [[fftttttt11111111111iiiiiiii;;;::;tt1111iiiii;ii;iiiiiiii;i;;;;;;;;;;;;;;;;ii1t1;:;;;;;i1ttffffffLLLL]],
-    [[ffftttttttt11111111iiiiiii;;;;::itt1111iiiiiiiiiii11iii;;;;;;;;;;;;ii;;i1i1tti::::;:;iittffffffLLLLL]],
-    [[fffffttttttt1111111iiiiiii;;;:::itt1111iiiiiiiii11iiiiiiiiiiiiii;;ii;itGLff1i:::::;;;i1tffffffLLLLLG]],
-    [[Lfffffftttttt111111iiiiii;;;;:::ift1111iiiiiii11iiiiii;;;;;:::;;;;;;;;;;ii;:::;:::;;;i1fffffLLLLLLGG]],
-    [[LLfffffftttttt11111iiiii;;;;;:::1ft1111111iii1tf11i11iiiiii;;;;;;;;;;i11i;;:;::::;;;;itfffLLLLLLLGGG]],
-    [[LLLLffffffftttt1111iiiii;;;;::::1ft111111111i1tf1t1i11ii;;;;;;;;;;:;ii;;;::;;;;;;;;;;1ffLLLLLLGGGGGG]],
-    [[GLLLLLfffffftttt111iiiii;;;;::::1fttt1111111i1tftt1i11iiiiiiii;;;;;ii;;:;;;;;;;;iiiiitLLLLLLLGGGGGCC]]
+    [[ffftttttttt11111111iiiiiii;;;;::itt1111iiiiiiiiiii11iii;;;;;;;;;;;;ii;;i1i1tti::::;:;iittffffffLLLLL]]
 }
 dashboard.section.buttons.val = {
 	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
