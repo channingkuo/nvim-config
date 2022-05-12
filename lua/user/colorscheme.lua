@@ -12,5 +12,7 @@ if not status_ok then
 end
 
 if colorscheme == "onedark" then
-  require "conf.onedark"
+  require "user.themes.onedark"
+elseif colorscheme == "catppuccin" then
+  require "user.themes.catppuccin"
 end

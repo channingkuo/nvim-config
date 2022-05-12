@@ -170,3 +170,12 @@ vim.cmd(
   nnoremap <leader>s :call search('\w\>', 'c')<CR>a<C-X><C-S>
 ]])
 
+-- gtags
+-- find functions calling this function
+-- keymap("n", "<leader>U", ":lua require('user.utils').GtagsRefernce()<cr>", opts)
+-- find definition
+-- keymap("n", "<leader>T", ":lua require('user.utils').GtagsText()<cr>", opts)
+
+-- ["P"] = { "<cmd>SessionManager load_session<cr>", "Projects" },
+keymap("n", "<leader>p", "<cmd>SessionManager load_session<cr>", opts)
+
