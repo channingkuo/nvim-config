@@ -109,6 +109,7 @@ return packer.startup(function(use)
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
+    commit = "44b7c8100269161e20d585f24bce322f6dcdf8d2",
   }
   use {
     "nvim-treesitter/nvim-treesitter-textobjects",
@@ -140,7 +141,8 @@ return packer.startup(function(use)
   -- Editor enhance
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "terrortylor/nvim-comment"
-  -- use "rmagatti/auto-session" -- auto restore session(constains layout, window etc..)
+  -- TODO 配置文件设定
+  use "Shatur/neovim-session-manager"
   -- cmp plugins
   use {
     "hrsh7th/nvim-cmp",
@@ -152,6 +154,9 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
+  -- TODO
+  -- use "jsfaint/gen_tags.vim"
+  -- use "ray-x/cmp-treesitter"
   use "f3fora/cmp-spell" -- spell check
   -- use "github/copilot.vim"  -- Copilot setup,
   -- use {
@@ -238,8 +243,10 @@ return packer.startup(function(use)
   --   "kevinhwang91/nvim-hlslens", -- highlight search
   --   disable = true,
   -- }
+  -- TODO 配置项
   -- use "kevinhwang91/nvim-bqf" -- better quick fix, use trouble instead
   -- use "RRethy/vim-illuminate" -- highlight undercursor word
+  -- TODO 配置项
   -- use "lewis6991/spellsitter.nvim" -- spell checker
   use "folke/todo-comments.nvim" -- todo comments
   -- use "liuchengxu/vista.vim"     -- outline
@@ -256,7 +263,11 @@ return packer.startup(function(use)
   -- tools
   -- use "cdelledonne/vim-cmake"
   use "ravenxrz/neovim-cmake"
-  use "skanehira/preview-markdown.vim" -- NOTE:: glow required : https://github.com/charmbracelet/glow
+  use {
+    "skanehira/preview-markdown.vim",
+    opt = true,
+    cmd = "PreviewMarkdown",
+  } -- NOTE:: glow required : https://github.com/charmbracelet/glow
   use "voldikss/vim-translator"
   use "mtdl9/vim-log-highlighting"
   use "Pocco81/HighStr.nvim"

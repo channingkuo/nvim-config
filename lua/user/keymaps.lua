@@ -18,11 +18,14 @@ vim.g.maplocalleader = ";"
 
 -- Normal --
 -- Better window navigation
+-- 光标在buffer区域切换
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
+
 -- NOTE: require winshit plugin
+-- 窗口的移动，可切换目录树和编辑区的位置
 keymap("n", "<C-W>m", ":WinShift<cr>", opts)
 
 -- i j remap to gi gj to get the consistent behaviour in wrap content mode (i.e. set wrap)
@@ -45,23 +48,27 @@ keymap("n", "<leader>d", ":bdelete<cr>", opts)
 keymap("n", "<leader>D", ":bdelete<cr>", opts)
 -- exit whole program
 keymap("n", "ZZ", ":lua require('user.utils').SaveAndExit()<cr>", opts)
+
+----------------------------------
 -- remap macro record key
 keymap("n", "Q", "q", opts)
 -- cancel q
 keymap("n", "q", "<Nop>", opts)
+----------------------------------
 
 -- center cursor
-keymap("n", "n", "nzzzv", opts)
-keymap("n", "N", "Nzzzv", opts)
-keymap("n", "J", "mzJ`z", opts)
+-- keymap("n", "n", "nzzzv", opts)
+-- keymap("n", "N", "Nzzzv", opts)
+-- keymap("n", "J", "mzJ`z", opts)
+----------------------------------
 -- keymap("n", "j", "jzz", opts)
 -- keymap("n", "k", "kzz", opts)
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-w>", ":resize -2<CR>", opts)
+keymap("n", "<C-s>", ":resize +2<CR>", opts)
+keymap("n", "<C-a>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-d>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 -- keymap("n", "R", ":bnext<CR>", opts)
@@ -77,8 +84,8 @@ keymap("v", "H", "^", opts)
 keymap("v", "L", "$", opts)
 
 -- Move text up and down
-keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
-keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
+-- keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
+-- keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
 -- Press jl fast to enter
@@ -92,7 +99,8 @@ keymap("v", ">", ">gv", opts)
 -- Move text up and down
 -- keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 -- keymap("v", "<A-k>", ":m .-2<CR>==", opts)
-keymap("v", "p", '"_dP', opts)
+
+-- keymap("v", "p", '"_dP', opts)
 
 -- Visual Block --
 -- Move text up and down
