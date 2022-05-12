@@ -231,7 +231,7 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-tree.lua" -- file explore
   use {
     "akinsho/bufferline.nvim", -- tab
-    tag = "v1.2.0",
+    tag = "v2.*",
   }
   -- use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim" -- status line

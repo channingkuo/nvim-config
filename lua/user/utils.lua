@@ -20,4 +20,18 @@ end
 --   vim.api.nvim_command(":copen")
 -- end
 
+-- close current buffer
+M.CloseCurrentBufferLeft = function()
+    -- move
+    vim.api.nvim_command(":BufferLineCyclePrev")
+    -- close
+    vim.api.nvim_command(":BufferLineCloseRight")
+end
+M.CloseCurrentBufferRight = function()
+    -- move
+    vim.api.nvim_command(":BufferLineCycleNext")
+    -- close
+    vim.api.nvim_command(":BufferLineCloseLeft")
+end
+
 return M
