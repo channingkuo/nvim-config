@@ -25,6 +25,10 @@ comment.setup {
       vim.api.nvim_buf_set_option(0, "commentstring", "//%s")      -- go use //
     elseif vim.api.nvim_buf_get_option(0, "filetype") == "shell" then   
       vim.api.nvim_buf_set_option(0, "commentstring", "#%s")      -- shell use //
+    elseif vim.api.nvim_buf_get_option(0, "filetype") == "java" then   
+      vim.api.nvim_buf_set_option(0, "commentstring", "//%s")
+    elseif vim.api.nvim_buf_get_option(0, "filetype") == "py" then   
+      vim.api.nvim_buf_set_option(0, "commentstring", "#%s")
     end
   end
 }
