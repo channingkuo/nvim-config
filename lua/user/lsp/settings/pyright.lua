@@ -5,8 +5,9 @@ return {
       analysis = {
         autoSearchPaths = true,
         typeCheckingMode = "off"
-        diagnosticMode = "workspace",
-        useLibraryCodeForTypes = true
+        -- 下面两个设置导致报错，hightlight
+        -- diagnosticMode = "workspace",
+        -- useLibraryCodeForTypes = true
       }
     }
   },
