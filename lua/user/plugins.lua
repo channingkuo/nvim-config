@@ -141,8 +141,9 @@ return packer.startup(function(use)
   -- Editor enhance
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "terrortylor/nvim-comment"
-  -- TODO 配置文件设定
   use "Shatur/neovim-session-manager"
+  -- java lsp plugin
+  use 'mfussenegger/nvim-jdtls'
   -- cmp plugins
   use {
     "hrsh7th/nvim-cmp",
