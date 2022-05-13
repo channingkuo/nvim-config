@@ -246,8 +246,8 @@ return packer.startup(function(use)
   -- }
   -- TODO 配置项
   -- use "kevinhwang91/nvim-bqf" -- better quick fix, use trouble instead
-  -- use "RRethy/vim-illuminate" -- highlight undercursor word
-  -- TODO 配置项
+  -- 禁止高亮的文件类型
+  use "RRethy/vim-illuminate" -- highlight undercursor word
   -- use "lewis6991/spellsitter.nvim" -- spell checker
   use "folke/todo-comments.nvim" -- todo comments
   -- use "liuchengxu/vista.vim"     -- outline

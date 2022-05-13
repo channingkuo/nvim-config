@@ -5,7 +5,7 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
---Remap space as leader key
+--Remap ; as leader key
 keymap("", ";", "<Nop>", opts)
 vim.g.mapleader = ";"
 vim.g.maplocalleader = ";"
@@ -152,26 +152,26 @@ keymap("n", "K", "<cmd>lua require'dapui'.eval()<cr>", opts)
 -- keymap("n", "<leader>dx", "<cmd>lua require'dap'.terminate()<cr>", opts)
 
 -- git diff view
-keymap('n', '<leader>j', ']c', opts)
-keymap('n', '<leader>k','[c', opts)
+-- keymap('n', '<leader>j', ']c', opts)
+-- keymap('n', '<leader>k','[c', opts)
 
 
 -- unit test
-keymap("n", "<leader>rr", "<cmd>UltestNearest<cr>", opts)
-keymap("n", "<leader>rd", "<cmd>UltestDebugNearest<cr>", opts)
+-- keymap("n", "<leader>rr", "<cmd>UltestNearest<cr>", opts)
+-- keymap("n", "<leader>rd", "<cmd>UltestDebugNearest<cr>", opts)
 
--- comment
-keymap("n", "gcf", "<cmd>Dox<cr>", opts)
+-- comment 在comment.lua中定义了快捷键
+-- keymap("n", "gcf", "<cmd>Dox<cr>", opts)
 
--- sniprun
-keymap("n", "<leader>rf", ":%SnipRun<cr>", opts)
-keymap("v", "<leader>rs", ":%SnipRun<cr>", opts)
+-- sniprun 执行代码片段
+-- keymap("n", "<leader>rf", ":%SnipRun<cr>", opts)
+-- keymap("v", "<leader>rs", ":%SnipRun<cr>", opts)
 
 -- for spell check
-vim.cmd(
-[[
-  nnoremap <leader>s :call search('\w\>', 'c')<CR>a<C-X><C-S>
-]])
+-- vim.cmd(
+-- [[
+--   nnoremap <leader>s :call search('\w\>', 'c')<CR>a<C-X><C-S>
+-- ]])
 
 -- gtags
 -- find functions calling this function

@@ -56,13 +56,18 @@ gitsigns.setup {
     map('n', '<leader>j', ':Gitsigns next_hunk<CR>')
     map('n', '<leader>k',':Gitsigns prev_hunk<CR>')
 
-    -- Actions 
+    -- Actions
+    -- 暂存
     map('n', '<leader>hs', ':Gitsigns stage_hunk<CR>')
-    map('n', '<leader>hr', ':Gitsigns reset_hunk<CR>')
+    -- map('n', '<leader>hr', ':Gitsigns reset_hunk<CR>')
+    -- map('n', '<leader>hR', '<cmd>Gitsigns reset_buffer<CR>')
+    -- 撤销暂存
     map('n', '<leader>hu', '<cmd>Gitsigns undo_stage_hunk<CR>')
+    -- 暂存当前文件
     map('n', '<leader>hS', '<cmd>Gitsigns stage_buffer<CR>')
-    map('n', '<leader>hR', '<cmd>Gitsigns reset_buffer<CR>')
+    -- 查看变化
     map('n', '<leader>hp', '<cmd>Gitsigns preview_hunk<CR>')
+    
     map('n', '<leader>hb', '<cmd>lua require"gitsigns".blame_line{full=true}<CR>')
     map('n', '<leader>tb', '<cmd>Gitsigns toggle_current_line_blame<CR>')
     map('n', '<leader>hd', '<cmd>Gitsigns diffthis<CR>')
