@@ -36,8 +36,8 @@ keymap("n", "<C-W>m", ":WinShift<cr>", opts)
 -- FileExpoler
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 -- 文件定位到目录树，已设置文件自动定位
--- keymap("n", "<leader>f", ":NvimTreeFindFile<cr>", opts)
--- 关闭语法高亮no highlight
+keymap("n", "<leader>f", ":NvimTreeFindFile<cr>", opts)
+-- no search highlight
 -- keymap("n", "<leader>l", ":nohl<cr>", opts)
 -- save buffer
 keymap("n", "<leader>w", ":w<cr>", opts)
@@ -55,7 +55,8 @@ keymap("n", "ZZ", ":lua require('user.utils').SaveAndExit()<cr>", opts)
 -- remap macro record key
 keymap("n", "Q", "q", opts)
 -- cancel q
-keymap("n", "q", "<Nop>", opts)
+-- keymap("n", "q", "<Nop>", opts)
+keymap("n", "q", ":nohl<cr>", opts)
 ----------------------------------
 
 -- center cursor
