@@ -15,10 +15,13 @@ local config = {
       '-Declipse.product=org.eclipse.jdt.ls.core.product',
       '-Dlog.protocol=true',
       '-Dlog.level=ALL',
-      '-Xms1g',
+      '-Xms400m',
       '--add-modules=ALL-SYSTEM',
       '--add-opens', 'java.base/java.util=ALL-UNNAMED',
       '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
+
+      '-javaagent', '/Users/channing/.local/share/nvim/lsp_servers/jdtls/lombok.jar',
+      '-Xbootclasspath/a', '/Users/channing/.local/share/nvim/lsp_servers/jdtls/lombok.jar',
   
       -- 💀
       -- '-jar', '/path/to/jdtls_install_location/plugins/org.eclipse.equinox.launcher_VERSION_NUMBER.jar',
